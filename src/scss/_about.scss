@@ -1,0 +1,109 @@
+.about {
+  padding-bottom: 2rem;
+
+  &__bio-image {
+    height: 50vh;
+    width: 100%;
+    background: 
+    linear-gradient(
+      to right,
+      rgba($first-color, 0.9),
+      rgba($first-color, 0.3)
+    ),
+    url('../img/model-1.jpg') center top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    p {
+      margin-bottom: 2rem;
+      color: set-text-color($first-color);
+    }
+  }
+
+  &__bio {
+    width: 70%;
+    text-align: center;
+
+    .title {
+      color: $second-color;
+      padding-bottom: 1rem;
+    }
+
+    p{
+      line-height: 1.3rem;
+    }
+  }
+
+  .jobs {
+    width: 60vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;    
+
+    &__job {
+      background: lighten($color: $first-color, $amount: 10%);
+      padding: 0.5rem;
+      border-bottom: 5px solid $second-color;
+
+      h2 {
+        color: $second-color;
+        margin: 0.5rem 0;
+      }
+
+      h3, h6, p {
+        color: set-text-color($first-color);
+      }
+
+      h3 {        
+        margin: 0.5rem 0;
+      }
+
+      h6 {        
+        margin: 0.4rem 0;
+      }
+      
+      desc {
+        color: rgba(set-text-color($first-color), 0.5)
+      }
+
+      p {
+        line-height: 1.2rem;
+      }
+
+    }
+  }
+}
+
+@include media-xs {
+  .about .jobs {
+    width: 50vw;
+  }
+  .about__bio {
+    width: 50%;
+  }
+  .about__bio h2 {
+    font-size: 1.2rem;
+  }
+  .about__bio p {
+    font-size: 0.8rem;
+  }
+  .jobs__job h2 {
+    font-size: 1rem;
+  }
+  .jobs__job h3 {
+    font-size: 0.9rem;
+  }
+  .jobs__job desc {
+    font-size: 0.7rem;
+  }
+  .jobs__job h6 {
+    font-size: 0.8rem;
+  }
+  .jobs__job p {
+    font-size: 0.6rem;         
+  }
+}

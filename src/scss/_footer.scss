@@ -1,0 +1,40 @@
+.footer-container {
+  height: 100%;
+  width: 100%;
+  //margin-top: 2rem;
+
+
+  .social-icons {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;    
+
+    a {
+      padding: 0.4rem;
+      color: set-text-color($first-color);
+      @include transition-ease;
+      
+      &:hover {
+        color: $second-color;
+      }
+     
+      .social-icon {        
+        width: 1.3rem;
+        height: 1.3rem;
+      }
+
+    }
+    
+  }
+
+  .copyright-container {
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0.1rem; //0.4
+    right: 0.1rem;
+    text-align: right;
+    padding: 1rem;
+    color: set-text-color($first-color);
+  }
+
+}

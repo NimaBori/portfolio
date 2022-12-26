@@ -1,0 +1,61 @@
+.contact {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: 
+  linear-gradient(
+    to right,
+    rgba($first-color, 0.9),
+    rgba($first-color, 0.3)
+  ),
+  url('../img/model-1.jpg') center top;
+  background-size: cover;
+  background-attachment: fixed;
+
+  h2 {
+    color: set-text-color($first-color);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    font-size: 1.5rem;  
+  }  
+
+  .contact__container {
+    color: set-text-color($first-color);    
+
+    &-header {      
+      display: flex;  
+      align-items: center;    
+      gap: 1rem; 
+      margin-bottom: 0.5rem;   
+
+      &--title {
+        margin: 0;        
+      }
+    }
+  }
+  
+  .text-details {
+    color: $second-color;    
+  }
+}
+
+@include media-xs {
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+  .contact__container-header--title {
+    font-size: 1.1rem;
+  }
+  .text-details {
+    font-size: 0.8rem;
+  }
+}

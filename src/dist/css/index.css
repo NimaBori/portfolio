@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #272727;
+  color: set-text-color(#272727);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.page-links {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: all 0.5s ease-in-out;
+}
+.page-links:hover {
+  color: #71C562;
+}
+
+.navbar-main {
+  background: transparent;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  left: 1rem;
+}
+.navbar-main_container {
+  background: transparent;
+}
+.navbar-main_brand {
+  color: #fff;
+  background: transparent;
+  margin-bottom: 1.2rem;
+  margin-right: 3rem;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-main_brand:hover {
+  color: #71C562;
+}
+.navbar-main_btn {
+  color: #fff;
+}
+.navbar-main_links {
+  color: #fff;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 1.3rem 1rem 0;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.navbar-main_links:hover {
+  color: #71C562;
+}
+
+.footer-container {
+  height: 100%;
+  width: 100%;
+}
+.footer-container .social-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+}
+.footer-container .social-icons a {
+  padding: 0.4rem;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.footer-container .social-icons a:hover {
+  color: #71C562;
+}
+.footer-container .social-icons a .social-icon {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.footer-container .copyright-container {
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0.1rem;
+  right: 0.1rem;
+  text-align: right;
+  padding: 1rem;
+  color: #fff;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+}
+.home__info {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.home h2 {
+  color: #fff;
+}
+.home__name {
+  color: #fff;
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fff;
+}
+.home__name--last {
+  color: #71C562;
+  font-weight: 700;
+}
+
+.about {
+  padding-bottom: 2rem;
+}
+.about__bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about__bio-image p {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.about__bio {
+  width: 70%;
+  text-align: center;
+}
+.about__bio .title {
+  color: #71C562;
+  padding-bottom: 1rem;
+}
+.about__bio p {
+  line-height: 1.3rem;
+}
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.about .jobs__job {
+  background: #414141;
+  padding: 0.5rem;
+  border-bottom: 5px solid #71C562;
+}
+.about .jobs__job h2 {
+  color: #71C562;
+  margin: 0.5rem 0;
+}
+.about .jobs__job h3, .about .jobs__job h6, .about .jobs__job p {
+  color: #fff;
+}
+.about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+.about .jobs__job h6 {
+  margin: 0.4rem 0;
+}
+.about .jobs__job desc {
+  color: rgba(255, 255, 255, 0.5);
+}
+.about .jobs__job p {
+  line-height: 1.2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .about .jobs {
+    width: 50vw;
+  }
+  .about__bio {
+    width: 50%;
+  }
+  .about__bio h2 {
+    font-size: 1.2rem;
+  }
+  .about__bio p {
+    font-size: 0.8rem;
+  }
+  .jobs__job h2 {
+    font-size: 1rem;
+  }
+  .jobs__job h3 {
+    font-size: 0.9rem;
+  }
+  .jobs__job desc {
+    font-size: 0.7rem;
+  }
+  .jobs__job h6 {
+    font-size: 0.8rem;
+  }
+  .jobs__job p {
+    font-size: 0.6rem;
+  }
+}
+.projects {
+  padding-bottom: 2rem;
+}
+.projects__bio-image {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.projects__bio-image h1 {
+  color: #71C562;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.projects__items {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+.projects__item {
+  position: relative;
+  border-bottom: 5px solid #71C562;
+  overflow: hidden;
+  cursor: pointer;
+}
+.projects__item img {
+  width: 100%;
+}
+.projects__item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #71C562;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.projects__item:hover::after {
+  top: 0;
+  opacity: 0.9;
+}
+.projects__item:hover .projects__btn {
+  opacity: 1;
+}
+.projects__btns {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: center;
+}
+.projects__btn {
+  opacity: 0;
+  color: #000;
+  transition: all 0.5s ease-in-out;
+}
+.projects__btn:hover {
+  color: #fff;
+}
+
+.contact {
+  height: 100vh;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.contact h2 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.contact__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  font-size: 1.5rem;
+}
+.contact .contact__container {
+  color: #fff;
+}
+.contact .contact__container-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+.contact .contact__container-header--title {
+  margin: 0;
+}
+.contact .text-details {
+  color: #71C562;
+}
+
+@media screen and (max-width: 576px) {
+  .contact h2 {
+    font-size: 1.8rem;
+  }
+  .contact__container-header--title {
+    font-size: 1.1rem;
+  }
+  .text-details {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=index.css.map */
